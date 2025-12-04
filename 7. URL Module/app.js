@@ -9,6 +9,7 @@ console.log('Hostname:', myURL.hostname);
 console.log('Pathname:', myURL.pathname);
 console.log('Original search parameters:', myURL.searchParams);
 
+// Update the 'sort' parameter to 'rating' if it exists
 
 // Iterate through each search parameter
 // myURL.searchParams.forEach((value, name, searchParams) => {
@@ -23,7 +24,6 @@ console.log('Original search parameters:', myURL.searchParams);
 
 //OR
 
-// Update the 'sort' parameter to 'rating' if it exists
 if (myURL.searchParams.has('sort')) {
     myURL.searchParams.set('sort', 'rating');
 }
